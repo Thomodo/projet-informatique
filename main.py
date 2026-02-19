@@ -1,5 +1,5 @@
-import classe
-#import function
+from function import *
+from classe import *
 
 ### Initialisaton (on veut savoir si le joueur veut charger la sauvegarde)
 
