@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42918eab-24f5-48aa-8fc3-3289e5073f49" name="Changes" comment="test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base_player_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/base_player_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classe.py" beforeDir="false" afterPath="$PROJECT_DIR$/classe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/player_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/to do" beforeDir="false" afterPath="$PROJECT_DIR$/to do" afterDir="false" />
-    </list>
+    <list default="true" id="42918eab-24f5-48aa-8fc3-3289e5073f49" name="Changes" comment="création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +77,7 @@
       <workItem from="1771034487614" duration="1048000" />
       <workItem from="1771107320348" duration="5564000" />
       <workItem from="1771538475445" duration="4353000" />
-      <workItem from="1771781651014" duration="2106000" />
+      <workItem from="1771781651014" duration="2487000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -183,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771782633815</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur">
+      <option name="closed" value="true" />
+      <created>1771783961467</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1771783961467</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +208,8 @@
     <MESSAGE value="ajout de fonction pratique:&#10;les données du joueur de base, et lecture des json" />
     <MESSAGE value="ajout des fichier json" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur" />
+    <option name="LAST_COMMIT_MESSAGE" value="création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/projet_informatique$function.coverage" NAME="function Coverage Results" MODIFIED="1771783710782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

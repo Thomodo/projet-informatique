@@ -16,7 +16,7 @@ def base_player_data():
 
 def base_player_data_dict():
     return {'max_health' : 100, 'attack_damage' : 20, 'crit_chance' : 0, 'crit_multiplier' : 2, 'money' : 0, 'actual_health' : 100,
-            'xp' : 0, 'weapon_level' : 0, 'armor_level' : 0, 'name' : "None"}
+            'xp' : 0, 'weapon_level' : 0, 'armor_level' : 0, 'name' : None}
 
 def read_player_data():
     return read_file("player_data.json")
@@ -24,7 +24,6 @@ def read_player_data():
 def create_new_save():
     write_data(base_player_data_dict(), "player_data.json")
 
-create_new_save()
 
 
 #write_data(base_player_data_dict(), "base_player_data.json")
