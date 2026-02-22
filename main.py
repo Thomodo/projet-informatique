@@ -14,3 +14,6 @@ if ans == "O": # Si la réponse est oui
     print("Chargement de la sauvegarde")
 else:
     print("Création d'une nouvelle sauvegarde")
+
+
+### Test ###
