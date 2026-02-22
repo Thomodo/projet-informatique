@@ -13,6 +13,7 @@ while ans not in ["O","N"]:
 if ans == "O": # Si la réponse est oui 
     print("Chargement de la sauvegarde")
 else:
+    create_new_save()
     print("Création d'une nouvelle sauvegarde")
 
 

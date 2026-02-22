@@ -11,3 +11,6 @@ class Player:
 
     def load_saved_player_data(self):
         self.player_data_dict = read_player_data()
+
+    def save_player_data(self):
+        write_data(self.player_data_dict, "player_data.json")
