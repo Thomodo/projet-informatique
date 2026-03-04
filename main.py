@@ -15,8 +15,10 @@ if ans == "O": # Si la réponse est oui
     player.load_saved_player_data()
     print("Chargement de la sauvegarde")
 else:
+    player = Player({})
     create_new_save()
+    player.load_saved_player_data()
     print("Création d'une nouvelle sauvegarde")
-
+    player.name_choose()
 
 ### choisir ce qu'on fait

@@ -15,3 +15,6 @@ class Player:
     def save_player_data(self):
         write_data(self.player_data_dict, "player_data.json")
 
+    def name_choose(self):
+        self.player_data_dict["name"] = input("Veillez choisr votre nom: ")
+        print("Vous vous appelez", self.player_data_dict["name"] + ".")
