@@ -31,7 +31,8 @@ while quit != True :
                 "Pour accéder à votre boutique, entrez 'boutique'\n"
                 "Pour effectuer un combat de boss, entrez 'boss'\n"
                 "Pour effectuer un combat contre un monstre, entrez 'monstre' \n"
-                "Pour quitter la partie , entrez 'quitter' \n")
+                "Pour quitter la partie , entrez 'quitter' \n"
+                "\n")
     
     while choice not in [ "Boutique","boutique", "Boss", "boss","Monstre","monstre",' Quitter', 'quitter']:
         choice = input("Vous devez répondre par soit par 'boutique' soit par  'boss'soit par  'monstre' ou par 'quitter'!\n")
@@ -46,6 +47,6 @@ while quit != True :
             print("Vous vous appretez à affronter un monstre")
         
         elif choice in ["Quitter", "quitter"]:
-            print(" Vous allez quitter le jeu, votre jeu sera automatiquement sauvegarder ")
+            print("Vous allez quitter le jeu, votre jeu sera automatiquement sauvegarder")
             player.save_player_data()
             quit = True 
