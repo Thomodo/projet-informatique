@@ -18,3 +18,19 @@ class Player:
     def name_choose(self):
         self.player_data_dict["name"] = input("Veillez choisr votre nom: ")
         print("Vous vous appelez", self.player_data_dict["name"] + ".")
+
+    def name_choose(self):
+        self.player_data_dict["name"] = input("Veillez choisr votre nom: ")
+        print("Vous vous appelez", self.player_data_dict["name"] + ".")
+
+    def level_update(self):
+        self.player_data_dict["level"] = xp_to_level(self.player_data_dict["xp"])
+
+
+class Monster:
+    def __init__(self, player_data_dict):
+        self.player_data_dict = player_data_dict
+
+    def load_monster_data(self, player):
+        self.monster_data_dict = monster_choose(player.player_data_dict["level"])
+
