@@ -1,4 +1,1 @@
-blabla
-écrit qqch ici si tu as accès
-Bla bla j'ai accès youhou 
-Chocapic 
+Désormé le jeux s'appelle pyplot the game
