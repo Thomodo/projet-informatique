@@ -24,6 +24,28 @@ def read_player_data():
 def create_new_save():
     write_data(base_player_data_dict(), "player_data.json")
 
+def monster_data_dict():
+    return {1 : [({'max_health' : 100, 'attack_damage' : 10, 'crit_chance' : 0, 'crit_multiplier' : 2, 'money_reward' : 10,
+                  'actual_health' : 100,'xp_reward' : 15, 'name' : "Michel_killeur"},1)]}
+
+def xp_to_level(xp):
+    level_tab = [0,0,10,50,100,500,1000,5000,10000,50000,100000]
+    for i in range(len(level_tab)):
+        if xp < level_tab[i]:
+            return i-1
+    else:
+        return len(level_tab) - 1
+
+def monster_choose(level):
+    liste = monster_data_dict()[level]
+    rng_number = uniform(0,1)
+    current = 0
+    for elt in liste:
+        if current <= rng_number and rng_number <= current + elt[1]:
+            return elt[0]
+        else:
+            current = current + elt[1]
+
 
 
 #write_data(base_player_data_dict(), "base_player_data.json")
