@@ -14,3 +14,4 @@ class Player:
 
     def save_player_data(self):
         write_data(self.player_data_dict, "player_data.json")
+

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42918eab-24f5-48aa-8fc3-3289e5073f49" name="Changes" comment="test">
+    <list default="true" id="42918eab-24f5-48aa-8fc3-3289e5073f49" name="Changes" comment="chargement sauvegarde">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classe.py" beforeDir="false" afterPath="$PROJECT_DIR$/classe.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/to do" beforeDir="false" afterPath="$PROJECT_DIR$/to do" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +89,7 @@
       <workItem from="1771107320348" duration="5564000" />
       <workItem from="1771538475445" duration="4353000" />
       <workItem from="1771781651014" duration="2487000" />
-      <workItem from="1772500900620" duration="1424000" />
+      <workItem from="1772500900620" duration="2150000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -202,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772501034092</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="chargement sauvegarde">
+      <option name="closed" value="true" />
+      <created>1772609352493</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1772609352494</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +237,8 @@
     <MESSAGE value="ajout des fichier json" />
     <MESSAGE value="création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="chargement sauvegarde" />
+    <option name="LAST_COMMIT_MESSAGE" value="chargement sauvegarde" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
