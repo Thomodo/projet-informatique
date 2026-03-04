@@ -36,10 +36,17 @@ while quit != True :
                 "\n")
     
     while choice not in [ "Boutique","boutique", "Boss", "boss","Monstre","monstre",' Quitter', 'quitter']:
-        choice = input("Vous devez répondre par soit par 'boutique' soit par  'boss'soit par  'monstre' ou par 'quitter'!\n")
+        choice = input("Vous devez répondre soit par 'boutique' soit par  'boss'soit par  'monstre' ou par 'quitter'!\n")
         
     if choice in ["Boutique","boutique"]:
-         print("Bienvenue dans la boutique " + player.player_data_dict["name"])
+        print=("Bienvenue dans la boutique" + player.player_data_dict["name"]+ " Vous avez", nbr ," Potion", "vous possédez", player.player.data_dict["argent"], "argent actuellement et vous êtes niveau", nbr level , "\n ")
+        article= input("Pour acheter des potions, entrez 'potion' \n"," pour acheter des améliorations pour votre arme, entrez 'arme' \n, pour acheter des améliorations pour votre armures,'armures'")
+
+        while article not in ["Armure","armure", "Potion", "potion","arme","arme"]:
+            article = input("Vous devez répondre soit par 'p' soit par 'a'soit par 'e'\n")
+        if article in ["Armure","armure"]:
+            armor=[["armur 1", 20,5 ],"armure 2",40,15,[""]]
+
 
     elif choice in ["Boss","boss"]:
         print("Vous vous appretez à effectuer un combat de boss")
