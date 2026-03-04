@@ -21,9 +21,9 @@ else:
     print("Création d'une nouvelle sauvegarde")
     player.name_choose()
 
-### choisir ce qu'on fait
 
 ### choisir ce qu'on fait
+
 quit = False 
 
 while quit != True : 

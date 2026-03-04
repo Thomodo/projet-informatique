@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42918eab-24f5-48aa-8fc3-3289e5073f49" name="Changes" comment="rien">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classe.py" beforeDir="false" afterPath="$PROJECT_DIR$/classe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="42918eab-24f5-48aa-8fc3-3289e5073f49" name="Changes" comment="finalisation de la création du personnage">
+      <change beforePath="$PROJECT_DIR$/to do" beforeDir="false" afterPath="$PROJECT_DIR$/to do" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +87,7 @@
       <workItem from="1771107320348" duration="5564000" />
       <workItem from="1771538475445" duration="4353000" />
       <workItem from="1771781651014" duration="2487000" />
-      <workItem from="1772500900620" duration="3170000" />
+      <workItem from="1772500900620" duration="4626000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -219,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772610058993</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="finalisation de la création du personnage">
+      <option name="closed" value="true" />
+      <created>1772611122897</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1772611122897</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +253,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="chargement sauvegarde" />
     <MESSAGE value="rien" />
-    <option name="LAST_COMMIT_MESSAGE" value="rien" />
+    <MESSAGE value="finalisation de la création du personnage" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalisation de la création du personnage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
