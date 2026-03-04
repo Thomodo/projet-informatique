@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="42918eab-24f5-48aa-8fc3-3289e5073f49" name="Changes" comment="création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur" />
+    <list default="true" id="42918eab-24f5-48aa-8fc3-3289e5073f49" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/to do" beforeDir="false" afterPath="$PROJECT_DIR$/to do" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,12 +35,12 @@
     &quot;assignee&quot;: &quot;Thomodo&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Thomodo/projet-informatique.git&quot;,
-    &quot;accountId&quot;: &quot;cd7fbb1c-607d-41e8-99e2-4666301910d4&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Thomodo/projet-informatique.git",
+    "accountId": "dcbf8097-90d4-4f8f-b447-46d7e4afdcf1"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -55,6 +61,10 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -62,8 +72,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.30387.173" />
-        <option value="bundled-python-sdk-4762d8aabb82-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.30387.173" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139" />
+        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
       </set>
     </attachedChunks>
   </component>
@@ -78,6 +88,7 @@
       <workItem from="1771107320348" duration="5564000" />
       <workItem from="1771538475445" duration="4353000" />
       <workItem from="1771781651014" duration="2487000" />
+      <workItem from="1772500900620" duration="1424000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -183,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771783961467</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="test">
+      <option name="closed" value="true" />
+      <created>1772501034092</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1772501034092</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,9 +226,19 @@
     <MESSAGE value="Choix de charger la sauvegarde ou d'en créer une nouvelle" />
     <MESSAGE value="ajout de fonction pratique:&#10;les données du joueur de base, et lecture des json" />
     <MESSAGE value="ajout des fichier json" />
-    <MESSAGE value="test" />
     <MESSAGE value="création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur" />
-    <option name="LAST_COMMIT_MESSAGE" value="création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/projet_informatique$function.coverage" NAME="function Coverage Results" MODIFIED="1771783710782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

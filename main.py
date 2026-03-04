@@ -10,7 +10,9 @@ while ans not in ["O","N"]:
     ans = input("Vous devez répondre 'O' ou 'N'!\n")
 
 
-if ans == "O": # Si la réponse est oui 
+if ans == "O": # Si la réponse est oui
+    player = Player({})
+    player.load_saved_player_data()
     print("Chargement de la sauvegarde")
 else:
     create_new_save()
