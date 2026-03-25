@@ -28,7 +28,7 @@ quit = False
 
 while quit != True :
 
-    choice = input ("Que souhaité vous faire ? \n" 
+    choice = input ("Que souhaitez vous faire ? \n" 
                 "Pour accéder à votre boutique, entrez 'boutique'\n"
                 "Pour effectuer un combat de boss, entrez 'boss'\n"
                 "Pour effectuer un combat contre un monstre, entrez 'monstre' \n"
@@ -39,13 +39,98 @@ while quit != True :
         choice = input("Vous devez répondre soit par 'boutique' soit par  'boss'soit par  'monstre' ou par 'quitter'!\n")
         
     if choice in ["Boutique","boutique"]:
-        print=("Bienvenue dans la boutique" + player.player_data_dict["name"]+ " Vous avez", nbr ," Potion", "vous possédez", player.player.data_dict["argent"], "argent actuellement et vous êtes niveau", nbr level , "\n ")
-        article= input("Pour acheter des potions, entrez 'potion' \n"," pour acheter des améliorations pour votre arme, entrez 'arme' \n, pour acheter des améliorations pour votre armures,'armures'")
-
-        while article not in ["Armure","armure", "Potion", "potion","arme","arme"]:
-            article = input("Vous devez répondre soit par 'p' soit par 'a'soit par 'e'\n")
-        if article in ["Armure","armure"]:
-            armor=[["armur 1", 20,5 ],"armure 2",40,15,[""]]
+        print("Bienvenue dans la boutique" + player.player_data_dict["name"]+ " Vous avez nbr  Potion", "vous possédez", player.player_data_dict["money"], "argent actuellement et vous êtes niveau", player.player_data_dict["level"], "\n ")
+        retour= False 
+        while retour!= True:
+            article= input("Pour acheter des potions, entrez 'potion' \n"," pour acheter des améliorations pour votre arme, entrez 'arme' \n, pour acheter des améliorations pour votre armures,'armures'")
+            while article not in ["Armure","armure", "Potion", "potion","arme","arme"]:
+                article = input("Vous devez répondre soit par 'armure' soit par 'potion'soit par 'arme'\n")
+                if article in ["Armure","armure"]:
+                    armory=[{"protection point":0," required level ":0, "Price":0},{"protection point":  5,"required level":10, "Price":5},
+                            {"protection point":10 ,"required level":20, "Price":10},{"protection point":15,"required level":30, "Price":15}
+                            {"protection point":20,"required level":40, "Price":20},{"protection point":25,"required level":50, "Price":25},
+                            {"protection point":30,"required level":60, "Price":30},{"protection point":35,"required level":70, "Price":35}
+                            {"protection point":40,"required level":80, "Price":40},{"protection point":45,"required level":90, "Price":45},
+                            {"protection point":50,"required level":100, "Price":50}]
+                    mini = armory[0]["required level"]
+                    indice_mini=0
+                    for i in range (len(armory)):
+                        if armory[i]["required level"] < player.player_data_dict["level"]:
+                            mini= armory[i]["required level"]
+                            indice_mini=i
+                    decision= input("L'armure disponible pour votre niveau actuelle permet d'ajouté",armory[indice_mini]["required level"],"point de protection,  son prix est de",armory[indice_mini]["Price"],"\n souhaitez vous l'acheté ?, 'O' pour Oui, 'N' pour Non\n") 
+                    while decision not in ["O","o","N","n"]:
+                        decision = input("Vous devez répondre 'O' ou 'N'!\n")
+                        if decision in ["O","o"]:
+                            if player.player_data_dict["money"]< armory[indice_mini]["Price"]:
+                                print ("Vous n'avez pas assez d'argent pour acheter cet article, revenez quand vous aurez assez")
+                            elif player.player_data_dict["amor"] < 3:
+                                print ("Votre inventaire est déja plein")
+                            else:
+                                player.player_data_dict["money"]-=armory[indice_mini]["Price"]
+                                player.player_data_dict["amor"]+=1
+                                print(" Félicitation" + player.player_data_dict["name"] + "vous venez d'obtenir une magnifique armure, votre argent maintenant à ", player.player_data_dict["money"])
+                        else:
+                            retour= True
+            
+                          
+                if article in ["Potion","potion"]:
+                    potion=[{"life point":0," required level ":0, "Price":0},{"life point":  5,"required level":10, "Price":5},
+                            {"life point":10 ,"required level":20, "Price":10},{"life point":15,"required level":30, "Price":15}
+                            {"life point":20,"required level":40, "Price":20},{"life point":25,"required level":50, "Price":25},
+                            {"life point":30,"required level":60, "Price":30},{"life point":35,"required level":70, "Price":35}
+                            {"life point":40,"required level":80, "Price":40},{"life point":45,"required level":90, "Price":45},
+                            {"life point":50,"required level":100, "Price":50}]
+                    mini = potion[0]["required level"]
+                    indice_mini=0
+                    for i in range (len(potion)):
+                        if potion[i]["required level"] < player.player_data_dict["level"]:
+                            mini= potion[i]["required level"]
+                            indice_mini=i
+                    decision= input("La potion disponible pour votre niveau actuelle permet d'ajouté",potion[indice_mini]["required level"],"point de vie, son prix est de",potion[indice_mini]["Price"],"\n souhaitez vous l'acheté ?, 'O' pour Oui, 'N' pour Non\n") 
+                    while decision not in ["O","o","N","n"]:
+                        decision = input("Vous devez répondre 'O' ou 'N'!\n")
+                        if decision in ["O","o"]:
+                            if player.player_data_dict["money"]< potion[indice_mini]["Price"]:
+                                print ("Vous n'avez pas assez d'argent pour acheter cet article, revenez quand vous aurez assez")
+                            elif player.player_data_dict["potion"] < 3:
+                                print ("Votre inventaire est déja plein")
+                            else:
+                                player.player_data_dict["argent"]-=potion[i]["Price"]
+                                player.player_data_dict["potion"]+=1
+                                print(" Félicitation" + player.player_data_dict["name"] + "vous venez d'obtenir une superbe potion, votre argent maintenant à ", player.player_data_dict["money"])
+                        else:
+                            retour= True
+                if article in ["Arme","arme"]:
+                    wheapon=[{"damage attack":0," required level ":0, "Price":0},{"damage attack":  5,"required level":10, "Price":5},
+                            {"damage attack":10 ,"required level":20, "Price":10},{"damage attack":15,"required level":30, "Price":15}
+                            {"damage attack":20,"required level":40, "Price":20},{"damage attack":25,"required level":50, "Price":25},
+                            {"damage attack":30,"required level":60, "Price":30},{"damage attack":35,"required level":70, "Price":35}
+                            {"damage attack":40,"required level":80, "Price":40},{"damage attack":45,"required level":90, "Price":45},
+                            {"damage attack":50,"required level":100, "Price":50}]
+                    mini = wheapon[0]["required level"]
+                    indice_mini=0
+                    for i in range (len(wheapon)):
+                        if wheapon[i]["required level"] < player.player_data_dict["level"]:
+                            mini= wheapon[i]["required level"]
+                            indice_mini=i
+                    decision= input("L'arme disponible pour votre niveau actuelle permet de faire",wheapon[indice_mini]["required level"],"dégât,  son prix est de",wheapon[indice_mini]["Price"],"\n souhaitez vous l'acheté ?, 'O' pour Oui, 'N' pour Non\n") 
+                    while decision not in ["O","o","N","n"]:
+                        decision = input("Vous devez répondre 'O' ou 'N'!\n")
+                        if decision in ["O","o"]:
+                            if player.player_data_dict["money"]< wheapon[indice_mini]["Price"]:
+                                print ("Vous n'avez pas assez d'argent pour acheter cet article, revenez quand vous aurez assez")
+                            elif player.player_data_dict["amor"] < 3:
+                                print ("Votre inventaire est déja plein")
+                            else:
+                                player.player_data_dict["money"]-=wheapon[indice_mini]["Price"]
+                                player.player_data_dict["amor"]+=1
+                                print(" Félicitation" + player.player_data_dict["name"] + "vous venez d'obtenir une magnifique arme, votre argent est maintenant à ", player.player_data_dict["money"])
+                        else:
+                            retour= True
+                  
+                            
+                   
 
 
     elif choice in ["Boss","boss"]:
