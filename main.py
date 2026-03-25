@@ -39,7 +39,7 @@ while quit != True :
         choice = input("Vous devez répondre soit par 'boutique' soit par  'boss'soit par  'monstre' ou par 'quitter'!\n")
         
     if choice in ["Boutique","boutique"]:
-        print=("Bienvenue dans la boutique" + player.player_data_dict["name"]+ " Vous avez", nbr ," Potion", "vous possédez", player.player.data_dict["argent"], "argent actuellement et vous êtes niveau", nbr level , "\n ")
+        print=("Bienvenue dans la boutique" + player.player_data_dict["name"]+ " Vous avez", "nbr" ," Potion", "vous possédez", player.player.data_dict["argent"], "argent actuellement et vous êtes niveau"," nbr level" , "\n ")
         article= input("Pour acheter des potions, entrez 'potion' \n"," pour acheter des améliorations pour votre arme, entrez 'arme' \n, pour acheter des améliorations pour votre armures,'armures'")
 
         while article not in ["Armure","armure", "Potion", "potion","arme","arme"]:
@@ -47,13 +47,13 @@ while quit != True :
         if article in ["Armure","armure"]:
             armor=[["armur 1", 20,5 ],"armure 2",40,15,[""]]
 
-
     elif choice in ["Boss","boss"]:
         print("Vous vous appretez à effectuer un combat de boss")
-            
+
     elif choice in ["Monstre","monstre"]:
         print("Vous vous appretez à affronter un monstre")
-        
+        player.start_monster_fight()
+
     elif choice in ["Quitter", "quitter"]:
         print("Vous allez quitter le jeu, votre jeu sera automatiquement sauvegarder")
         player.save_player_data()
