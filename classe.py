@@ -98,6 +98,7 @@ class Player:
             self.player_data_dict['xp'] += monster.monster_data_dict['xp_reward']
             print("Vous avez gagné !\n"
                   "En récompense vous recevez ", monster.monster_data_dict['money_reward'], ' $ et ', monster.monster_data_dict['xp_reward'], ' xp.')
+            update_level(self)
         self.player_data_dict['actual_health'] = self.player_data_dict['max_health']
 
 class Monster:
