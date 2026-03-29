@@ -98,8 +98,26 @@ class Player:
             self.player_data_dict['xp'] += monster.monster_data_dict['xp_reward']
             print("Vous avez gagné !\n"
                   "En récompense vous recevez ", monster.monster_data_dict['money_reward'], ' $ et ', monster.monster_data_dict['xp_reward'], ' xp.')
-            update_level(self)
+            self.update_level()
         self.player_data_dict['actual_health'] = self.player_data_dict['max_health']
+
+    def update_level(self):
+        old_level = self.player_data_dict['level']
+        current_level = xp_to_level(self.player_data_dict['xp'])
+        self.player_data_dict['level'] = current_level
+        if old_level < current_level:
+            print('Félicitation, tu es passé niveau ', current_level, '.')
+        self.update_crit_chance()
+
+    def update_crit_chance(self):
+        old_crit_chance = self.player_data_dict['crit_chance']
+        level = self.player_data_dict['level']
+        crit_chance = 0.02 * level
+        if crit_chance > 1:
+            crit_chance = 1
+        self.player_data_dict['crit_chance'] = crit_chance
+        if old_crit_chance < crit_chance:
+            print("Vous avez atteint une probabilité de ", crit_chance, " de faire un coup critique.")
 
 class Monster:
     def __init__(self, player_data_dict):

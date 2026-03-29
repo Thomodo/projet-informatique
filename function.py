@@ -63,13 +63,5 @@ def prob_calc(prob):
     else:
         return False
 
-def update_level(player):
-    old_level = player.player_data_dict('level')
-    current_level = xp_to_level(player.player_data_dict('xp'))
-    player.player_data_dict('level') = current_level
-    if old_level < current_level:
-        print('Félicitation, tu es passé niveau ', current_level, '.')
-
-
 
 #write_data(base_player_data_dict(), "base_player_data.json")
