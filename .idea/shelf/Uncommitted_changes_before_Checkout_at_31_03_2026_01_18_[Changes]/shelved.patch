@@ -1,0 +1,204 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_22_03_2026_22_49_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2026_22_49_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2026_22_49_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2026_22_49_[Changes]/shelved.patch	(revision 284a1fb7549de2d5dc944f03a5a38e8816616086)
++++ /dev/null	(revision 284a1fb7549de2d5dc944f03a5a38e8816616086)
+@@ -1,103 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"42918eab-24f5-48aa-8fc3-3289e5073f49\" name=\"Changes\" comment=\"création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ChangesViewManager\">\r\n    <option name=\"groupingKeys\">\r\n      <option value=\"directory\" />\r\n      <option value=\"repository\" />\r\n    </option>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Thomodo&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Thomodo/projet-informatique.git&quot;,\r\n    &quot;accountId&quot;: &quot;cd7fbb1c-607d-41e8-99e2-4666301910d4&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"39dmn6CH3hkZWQXkF76P3FBQm3w\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"Python.classe.executor\": \"Run\",\r\n    \"Python.function.executor\": \"Run\",\r\n    \"Python.main.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\r\n    \"ai.playground.ignore.import.keys.banner.in.settings\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.30387.173\" />\r\n        <option value=\"bundled-python-sdk-4762d8aabb82-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.30387.173\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"42918eab-24f5-48aa-8fc3-3289e5073f49\" name=\"Changes\" comment=\"\" />\r\n      <created>1771034486595</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1771034486595</updated>\r\n      <workItem from=\"1771034487614\" duration=\"1048000\" />\r\n      <workItem from=\"1771107320348\" duration=\"5564000\" />\r\n      <workItem from=\"1771538475445\" duration=\"4353000\" />\r\n      <workItem from=\"1771781651014\" duration=\"2487000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"initial commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771034540759</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771034540759</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771034791295</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771034791295</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771035212419</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771035212419</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771035316076</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771035316076</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771035403463</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771035403463</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771035422994</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771035422994</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"initialisation player\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771108772550</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771108772550</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"création du système de sauvegarde (un dico est stocké dans un json avec toute les infos sur le joueur)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771111205952</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771111205952</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Choix de charger la sauvegarde ou d'en créer une nouvelle\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771113064993</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771113064993</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"ajout de fonction pratique:&#10;les données du joueur de base, et lecture des json\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771542288432</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771542288432</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"ajout des fichier json\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771782528200</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771782528200</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771782633815</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771782633815</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771783961467</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771783961467</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"14\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"initial commit\" />\r\n    <MESSAGE value=\"initialisation player\" />\r\n    <MESSAGE value=\"création du système de sauvegarde (un dico est stocké dans un json avec toute les infos sur le joueur)\" />\r\n    <MESSAGE value=\"Choix de charger la sauvegarde ou d'en créer une nouvelle\" />\r\n    <MESSAGE value=\"ajout de fonction pratique:&#10;les données du joueur de base, et lecture des json\" />\r\n    <MESSAGE value=\"ajout des fichier json\" />\r\n    <MESSAGE value=\"test\" />\r\n    <MESSAGE value=\"création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/projet_informatique$function.coverage\" NAME=\"function Coverage Results\" MODIFIED=\"1771783710782\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/projet_informatique$classe.coverage\" NAME=\"classe Coverage Results\" MODIFIED=\"1771108501358\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/projet_informatique$main.coverage\" NAME=\"main Coverage Results\" MODIFIED=\"1771113006757\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision f735136fcdb14c9798c9b228bd6acb52c21a099b)
+-+++ b/.idea/workspace.xml	(date 1774216083697)
+-@@ -1,7 +1,9 @@
+- <?xml version="1.0" encoding="UTF-8"?>
+- <project version="4">
+-   <component name="ChangeListManager">
+--    <list default="true" id="42918eab-24f5-48aa-8fc3-3289e5073f49" name="Changes" comment="création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur" />
+-+    <list default="true" id="42918eab-24f5-48aa-8fc3-3289e5073f49" name="Changes" comment="correction">
+-+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-+    </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-@@ -43,22 +45,22 @@
+-     <option name="hideEmptyMiddlePackages" value="true" />
+-     <option name="showLibraryContents" value="true" />
+-   </component>
+--  <component name="PropertiesComponent"><![CDATA[{
+--  "keyToString": {
+--    "ModuleVcsDetector.initialDetectionPerformed": "true",
+--    "Python.classe.executor": "Run",
+--    "Python.function.executor": "Run",
+--    "Python.main.executor": "Run",
+--    "RunOnceActivity.ShowReadmeOnStart": "true",
+--    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+--    "RunOnceActivity.git.unshallow": "true",
+--    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+--    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+--    "git-widget-placeholder": "master",
+--    "nodejs_package_manager_path": "npm",
+--    "vue.rearranger.settings.migration": "true"
+-+  <component name="PropertiesComponent">{
+-+  &quot;keyToString&quot;: {
+-+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+-+    &quot;Python.classe.executor&quot;: &quot;Run&quot;,
+-+    &quot;Python.function.executor&quot;: &quot;Run&quot;,
+-+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+-+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+-+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+-+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+-+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+-+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+-   }
+--}]]></component>
+-+}</component>
+-   <component name="SharedIndexes">
+-     <attachedChunks>
+-       <set>
+-@@ -77,7 +79,8 @@
+-       <workItem from="1771034487614" duration="1048000" />
+-       <workItem from="1771107320348" duration="5564000" />
+-       <workItem from="1771538475445" duration="4353000" />
+--      <workItem from="1771781651014" duration="2487000" />
+-+      <workItem from="1771781651014" duration="3460000" />
+-+      <workItem from="1774215253949" duration="616000" />
+-     </task>
+-     <task id="LOCAL-00001" summary="initial commit">
+-       <option name="closed" value="true" />
+-@@ -183,7 +186,15 @@
+-       <option name="project" value="LOCAL" />
+-       <updated>1771783961467</updated>
+-     </task>
+--    <option name="localTasksCounter" value="14" />
+-+    <task id="LOCAL-00014" summary="correction">
+-+      <option name="closed" value="true" />
+-+      <created>1771784316316</created>
+-+      <option name="number" value="00014" />
+-+      <option name="presentableId" value="LOCAL-00014" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1771784316316</updated>
+-+    </task>
+-+    <option name="localTasksCounter" value="15" />
+-     <servers />
+-   </component>
+-   <component name="TypeScriptGeneratedFilesManager">
+-@@ -209,11 +220,12 @@
+-     <MESSAGE value="ajout des fichier json" />
+-     <MESSAGE value="test" />
+-     <MESSAGE value="création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur" />
+--    <option name="LAST_COMMIT_MESSAGE" value="création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur" />
+-+    <MESSAGE value="correction" />
+-+    <option name="LAST_COMMIT_MESSAGE" value="correction" />
+-   </component>
+-   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+--    <SUITE FILE_PATH="coverage/projet_informatique$function.coverage" NAME="function Coverage Results" MODIFIED="1771783710782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+-+    <SUITE FILE_PATH="coverage/projet_informatique$function.coverage" NAME="function Coverage Results" MODIFIED="1771784259265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+-     <SUITE FILE_PATH="coverage/projet_informatique$classe.coverage" NAME="classe Coverage Results" MODIFIED="1771108501358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+--    <SUITE FILE_PATH="coverage/projet_informatique$main.coverage" NAME="main Coverage Results" MODIFIED="1771113006757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+-+    <SUITE FILE_PATH="coverage/projet_informatique$main.coverage" NAME="main Coverage Results" MODIFIED="1771784283098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+-   </component>
+- </project>
+-\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_22_03_2026_22_49__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2026_22_49__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2026_22_49__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2026_22_49__Changes_.xml	(revision 284a1fb7549de2d5dc944f03a5a38e8816616086)
++++ /dev/null	(revision 284a1fb7549de2d5dc944f03a5a38e8816616086)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_22_03_2026_22_49_[Changes]" date="1774216255111" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2026_22_49_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 22/03/2026 22:49 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"42918eab-24f5-48aa-8fc3-3289e5073f49\" name=\"Changes\" comment=\"création système de combat\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/projet informatique.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/projet informatique.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/classe.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/classe.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/function.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/function.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ChangesViewManager\">\r\n    <option name=\"groupingKeys\">\r\n      <option value=\"directory\" />\r\n      <option value=\"repository\" />\r\n    </option>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Thomodo&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Thomodo/projet-informatique.git&quot;,\r\n    &quot;accountId&quot;: &quot;dcbf8097-90d4-4f8f-b447-46d7e4afdcf1&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"39dmn6CH3hkZWQXkF76P3FBQm3w\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\r\n    &quot;Python.classe.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.function.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.main.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,\r\n    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;Thomodo&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139\" />\r\n        <option value=\"bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"42918eab-24f5-48aa-8fc3-3289e5073f49\" name=\"Changes\" comment=\"\" />\r\n      <created>1771034486595</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1771034486595</updated>\r\n      <workItem from=\"1771034487614\" duration=\"1048000\" />\r\n      <workItem from=\"1771107320348\" duration=\"5564000\" />\r\n      <workItem from=\"1771538475445\" duration=\"4353000\" />\r\n      <workItem from=\"1771781651014\" duration=\"2487000\" />\r\n      <workItem from=\"1774423568287\" duration=\"11927000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"initial commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771034540759</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771034540759</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771034791295</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771034791295</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771035212419</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771035212419</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771035316076</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771035316076</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771035403463</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771035403463</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771035422994</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771035422994</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"initialisation player\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771108772550</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771108772550</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"création du système de sauvegarde (un dico est stocké dans un json avec toute les infos sur le joueur)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771111205952</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771111205952</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Choix de charger la sauvegarde ou d'en créer une nouvelle\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771113064993</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771113064993</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"ajout de fonction pratique:&#10;les données du joueur de base, et lecture des json\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771542288432</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771542288432</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"ajout des fichier json\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771782528200</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771782528200</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771782633815</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771782633815</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1771783961467</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1771783961467</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"création système de combat\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1774435040131</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1774435040133</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"15\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"initial commit\" />\r\n    <MESSAGE value=\"initialisation player\" />\r\n    <MESSAGE value=\"création du système de sauvegarde (un dico est stocké dans un json avec toute les infos sur le joueur)\" />\r\n    <MESSAGE value=\"Choix de charger la sauvegarde ou d'en créer une nouvelle\" />\r\n    <MESSAGE value=\"ajout de fonction pratique:&#10;les données du joueur de base, et lecture des json\" />\r\n    <MESSAGE value=\"ajout des fichier json\" />\r\n    <MESSAGE value=\"test\" />\r\n    <MESSAGE value=\"création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur\" />\r\n    <MESSAGE value=\"création système de combat\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"création système de combat\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/projet_informatique2$main.coverage\" NAME=\"main Coverage Results\" MODIFIED=\"1774434503329\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/projet_informatique2$function.coverage\" NAME=\"function Coverage Results\" MODIFIED=\"1774432842449\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/projet_informatique$classe.coverage\" NAME=\"classe Coverage Results\" MODIFIED=\"1771108501358\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/projet_informatique$function.coverage\" NAME=\"function Coverage Results\" MODIFIED=\"1771783710782\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n    <SUITE FILE_PATH=\"coverage/projet_informatique$main.coverage\" NAME=\"main Coverage Results\" MODIFIED=\"1771113006757\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 284a1fb7549de2d5dc944f03a5a38e8816616086)
++++ b/.idea/workspace.xml	(date 1774912615702)
+@@ -4,12 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="42918eab-24f5-48aa-8fc3-3289e5073f49" name="Changes" comment="création système de combat">
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/projet informatique.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projet informatique.iml" afterDir="false" />
++    <list default="true" id="42918eab-24f5-48aa-8fc3-3289e5073f49" name="Changes" comment="petite correction de bug et ajout de la mise à jour des coup critique">
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2026_22_49_[Changes]/shelved.patch" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_03_2026_22_49__Changes_.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/classe.py" beforeDir="false" afterPath="$PROJECT_DIR$/classe.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/function.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -43,12 +41,12 @@
+     &quot;assignee&quot;: &quot;Thomodo&quot;
+   }
+ }</component>
+-  <component name="GithubPullRequestsUISettings">{
+-  &quot;selectedUrlAndAccountId&quot;: {
+-    &quot;url&quot;: &quot;https://github.com/Thomodo/projet-informatique.git&quot;,
+-    &quot;accountId&quot;: &quot;dcbf8097-90d4-4f8f-b447-46d7e4afdcf1&quot;
+-  }
+-}</component>
++  <component name="GithubPullRequestsUISettings"><![CDATA[{
++  "selectedUrlAndAccountId": {
++    "url": "https://github.com/Thomodo/projet-informatique.git",
++    "accountId": "cd7fbb1c-607d-41e8-99e2-4666301910d4"
++  }
++}]]></component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 2
+ }</component>
+@@ -80,8 +78,7 @@
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139" />
+-        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
++        <option value="bundled-python-sdk-4762d8aabb82-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.30387.173" />
+       </set>
+     </attachedChunks>
+   </component>
+@@ -210,7 +207,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1774435040133</updated>
+     </task>
+-    <option name="localTasksCounter" value="15" />
++    <task id="LOCAL-00015" summary="petite correction de bug et ajout de la mise à jour des coup critique">
++      <option name="closed" value="true" />
++      <created>1774745954596</created>
++      <option name="number" value="00015" />
++      <option name="presentableId" value="LOCAL-00015" />
++      <option name="project" value="LOCAL" />
++      <updated>1774745954596</updated>
++    </task>
++    <option name="localTasksCounter" value="16" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -237,7 +242,8 @@
+     <MESSAGE value="test" />
+     <MESSAGE value="création de la fonction qui créer une nouvelle sauvegarde et de la fonction dans la classe qui sauvegarde les données du joueur" />
+     <MESSAGE value="création système de combat" />
+-    <option name="LAST_COMMIT_MESSAGE" value="création système de combat" />
++    <MESSAGE value="petite correction de bug et ajout de la mise à jour des coup critique" />
++    <option name="LAST_COMMIT_MESSAGE" value="petite correction de bug et ajout de la mise à jour des coup critique" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/projet_informatique2$main.coverage" NAME="main Coverage Results" MODIFIED="1774434503329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
