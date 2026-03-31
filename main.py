@@ -39,20 +39,19 @@ while quit != True :
         choice = input("Vous devez répondre soit par 'boutique' soit par  'boss'soit par  'monstre' ou par 'quitter'!\n")
         
     if choice in ["Boutique","boutique"]:
-        print("Bienvenue dans la boutique" + player.player_data_dict["name"]+ " Vous avez nbr  Potion", "vous possédez", player.player_data_dict["money"], "argent actuellement et vous êtes niveau", player.player_data_dict["level"], "\n ")
+        print("Bienvenue dans la boutique" + player.player_data_dict["name"]+ " Vous avez nbr  Potion, vous possédez" + str(player.player_data_dict["money"])+ "argent actuellement et vous êtes niveau"+ str(player.player_data_dict["level"])+ "\n ")
         retour= False 
         while retour!= True:
-            article= input("Pour acheter des potions, entrez 'potion' \n"," pour acheter des améliorations pour votre arme, entrez 'arme' \n, pour acheter des améliorations pour votre armures,'armures'")
+            article= input("Pour acheter des potions, entrez 'potion' \n, pour acheter des améliorations pour votre arme, entrez 'arme' \n, pour acheter des améliorations pour votre armure, entrez'armure'")
             while article not in ["Armure","armure", "Potion", "potion","arme","arme"]:
                 article = input("Vous devez répondre soit par 'armure' soit par 'potion'soit par 'arme'\n")
                 if article in ["Armure","armure"]:
                     armory=[{"protection point":0," required level ":0, "Price":0},{"protection point":  5,"required level":10, "Price":5},
-                            {"protection point":10 ,"required level":20, "Price":10},{"protection point":15,"required level":30, "Price":15}
+                            {"protection point":10 ,"required level":20, "Price":10},{"protection point":15,"required level":30, "Price":15},
                             {"protection point":20,"required level":40, "Price":20},{"protection point":25,"required level":50, "Price":25},
-                            {"protection point":30,"required level":60, "Price":30},{"protection point":35,"required level":70, "Price":35}
+                            {"protection point":30,"required level":60, "Price":30},{"protection point":35,"required level":70, "Price":35},
                             {"protection point":40,"required level":80, "Price":40},{"protection point":45,"required level":90, "Price":45},
                             {"protection point":50,"required level":100, "Price":50}]
-                    mini = armory[0]["required level"]
                     indice_mini=0
                     for i in range (len(armory)):
                         if armory[i]["required level"] < player.player_data_dict["level"]:
@@ -76,9 +75,9 @@ while quit != True :
                           
                 if article in ["Potion","potion"]:
                     potion=[{"life point":0," required level ":0, "Price":0},{"life point":  5,"required level":10, "Price":5},
-                            {"life point":10 ,"required level":20, "Price":10},{"life point":15,"required level":30, "Price":15}
+                            {"life point":10 ,"required level":20, "Price":10},{"life point":15,"required level":30, "Price":15},
                             {"life point":20,"required level":40, "Price":20},{"life point":25,"required level":50, "Price":25},
-                            {"life point":30,"required level":60, "Price":30},{"life point":35,"required level":70, "Price":35}
+                            {"life point":30,"required level":60, "Price":30},{"life point":35,"required level":70, "Price":35},
                             {"life point":40,"required level":80, "Price":40},{"life point":45,"required level":90, "Price":45},
                             {"life point":50,"required level":100, "Price":50}]
                     mini = potion[0]["required level"]
@@ -103,9 +102,9 @@ while quit != True :
                             retour= True
                 if article in ["Arme","arme"]:
                     wheapon=[{"damage attack":0," required level ":0, "Price":0},{"damage attack":  5,"required level":10, "Price":5},
-                            {"damage attack":10 ,"required level":20, "Price":10},{"damage attack":15,"required level":30, "Price":15}
+                            {"damage attack":10 ,"required level":20, "Price":10},{"damage attack":15,"required level":30, "Price":15},
                             {"damage attack":20,"required level":40, "Price":20},{"damage attack":25,"required level":50, "Price":25},
-                            {"damage attack":30,"required level":60, "Price":30},{"damage attack":35,"required level":70, "Price":35}
+                            {"damage attack":30,"required level":60, "Price":30},{"damage attack":35,"required level":70, "Price":35},
                             {"damage attack":40,"required level":80, "Price":40},{"damage attack":45,"required level":90, "Price":45},
                             {"damage attack":50,"required level":100, "Price":50}]
                     mini = wheapon[0]["required level"]
