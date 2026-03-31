@@ -12,12 +12,9 @@ def read_file(file_name):
         data = json.load(json_file)
         return data
 
-def base_player_data():
-    return read_file("base_player_data.json")
-
 def base_player_data_dict():
     return {'max_health' : 100, 'attack_damage' : 20, 'crit_chance' : 0, 'crit_multiplier' : 2, 'money' : 0, 'actual_health' : 100,
-            'xp' : 0, 'weapon_level' : 0, 'armor_level' : 0, 'name' : None, 'level':1}
+            'xp' : 0, 'weapon_level' : 0, 'armor_level' : 0, 'name' : None, 'level' : 1}
 
 def read_player_data():
     return read_file("player_data.json")
@@ -38,7 +35,8 @@ def xp_to_level(xp):
         return len(level_tab) - 1
 
 def monster_choose(level):
-    liste = monster_data_dict()[level]
+    liste_1 = monster_data_dict()
+    liste = liste_1[level]
     rng_number = uniform(0,1)
     current = 0
     for elt in liste:
@@ -48,5 +46,17 @@ def monster_choose(level):
             current = current + elt[1]
 
 
+def crit_work(crit_chance):
+    rng_number = uniform(0, 1)
+    if rng_number <= crit_chance:
+        return 1
+    else:
+        return 0
 
-#write_data(base_player_data_dict(), "base_player_data.json")
+def prob_calc(prob):
+    rng_number = uniform(0, 1)
+    if rng_number <= prob:
+        return True
+    else:
+        return False
+
