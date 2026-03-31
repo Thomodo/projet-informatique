@@ -26,6 +26,98 @@ class Player:
     def level_update(self):
         self.player_data_dict["level"] = xp_to_level(self.player_data_dict["xp"])
 
+    def start_monster_fight(self):
+        monster = Monster(self.player_data_dict)
+        monster.load_monster_data(self)
+        tour = 0
+        commence = prob_calc(0.5)
+        if commence:
+            while self.player_data_dict['actual_health'] > 0 and monster.monster_data_dict['actual_health'] > 0:
+                if tour % 2 == 0: #tour joueur
+                    print('Vous êtes face à ', monster.monster_data_dict['name'], ',il lui reste ',monster.monster_data_dict['actual_health'], 'points de vie.')
+                    ans = input("Voulez vous attaquer ce monstre ou fuir comme un lache (Vous allez perdre 10% de votre argent) ?\n"
+                                "'B' pour se battre, 'F' pour fuir comme un lache\n"
+                                "\n")
+                    while ans not in ["B", "F"]:
+                        ans = input("Vous devez répondre 'B' ou 'F'!\n")
+
+                    if ans == "B":  # Si la réponse est oui
+                        damage = (self.player_data_dict["attack_damage"] *
+                                        (1 + (self.player_data_dict["crit_multiplier"] - 1)*crit_work(self.player_data_dict["crit_chance"])))
+                        monster.monster_data_dict['actual_health'] -= damage
+                        print("Vous avez fait ", damage, " dégats au monstre")
+                    else:
+                        self.player_data_dict["money"] = self.player_data_dict["money"] * 0.9
+                        self.player_data_dict['actual_health'] = 0
+                        print('Vous êtes un lache, vous avez perdu ', self.player_data_dict["money"], "$.")
+
+                else: # tour monstre
+                    damage = (monster.monster_data_dict["attack_damage"] *
+                                        (1 + (monster.monster_data_dict["crit_multiplier"] - 1)*crit_work(monster.monster_data_dict["crit_chance"])))
+                    self.player_data_dict['actual_health'] -= damage
+                    print(monster.monster_data_dict['name'], ' vous a fait ', damage
+                          , ' point de dégats, il vous reste ', self.player_data_dict['actual_health'], ' points de vie.')
+                tour = tour + 1
+        else:
+            while self.player_data_dict['actual_health'] > 0 and monster.monster_data_dict['actual_health'] > 0:
+                if tour % 2 == 0: #tour monstre
+                    damage = (monster.monster_data_dict["attack_damage"] *
+                              (1 + (monster.monster_data_dict["crit_multiplier"] - 1) * crit_work(
+                                  monster.monster_data_dict["crit_chance"])))
+                    self.player_data_dict['actual_health'] -= damage
+                    print(monster.monster_data_dict['name'], ' vous a fait ', damage
+                          , ' point de dégats, il vous reste ', self.player_data_dict['actual_health'],
+                          ' points de vie.')
+
+                else: # tour joueur
+                    print('Vous êtes face à ', monster.monster_data_dict['name'], ',il lui reste ',
+                          monster.monster_data_dict['actual_health'], 'points de vie.')
+                    ans = input(
+                        "Voulez vous attaquer ce monstre ou fuir comme un lache (Vous allez perdre 10% de votre argent) ?\n"
+                        "'B' pour se battre, 'F' pour fuir comme un lache\n"
+                        "\n")
+                    while ans not in ["B", "F"]:
+                        ans = input("Vous devez répondre 'B' ou 'F'!\n")
+
+                    if ans == "B":  # Si la réponse est oui
+                        damage = (self.player_data_dict["attack_damage"] *
+                                  (1 + (self.player_data_dict["crit_multiplier"] - 1) * crit_work(
+                                      self.player_data_dict["crit_chance"])))
+                        monster.monster_data_dict['actual_health'] -= damage
+                        print("Vous avez fait ", damage, " dégats au monstre")
+                    else:
+                        loose = self.player_data_dict["money"] * 0.1
+                        self.player_data_dict["money"] = self.player_data_dict["money"] * 0.9
+                        self.player_data_dict['actual_health'] = 0
+                        print('Vous êtes un lache, vous avez perdu ', loose, "$.")
+                tour = tour + 1
+        if self.player_data_dict['actual_health'] <= 0:
+            print("Vous avez perdu !")
+        else:
+            self.player_data_dict['money'] += monster.monster_data_dict['money_reward']
+            self.player_data_dict['xp'] += monster.monster_data_dict['xp_reward']
+            print("Vous avez gagné !\n"
+                  "En récompense vous recevez ", monster.monster_data_dict['money_reward'], ' $ et ', monster.monster_data_dict['xp_reward'], ' xp.')
+            self.update_level()
+        self.player_data_dict['actual_health'] = self.player_data_dict['max_health']
+
+    def update_level(self):
+        old_level = self.player_data_dict['level']
+        current_level = xp_to_level(self.player_data_dict['xp'])
+        self.player_data_dict['level'] = current_level
+        if old_level < current_level:
+            print('Félicitation, tu es passé niveau ', current_level, '.')
+        self.update_crit_chance()
+
+    def update_crit_chance(self):
+        old_crit_chance = self.player_data_dict['crit_chance']
+        level = self.player_data_dict['level']
+        crit_chance = 0.02 * level
+        if crit_chance > 1:
+            crit_chance = 1
+        self.player_data_dict['crit_chance'] = crit_chance
+        if old_crit_chance < crit_chance:
+            print("Vous avez atteint une probabilité de ", crit_chance, " de faire un coup critique.")
 
 class Monster:
     def __init__(self, player_data_dict):
