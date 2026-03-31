@@ -134,16 +134,13 @@ while quit != True :
                             print(" Félicitation" + player.player_data_dict["name"] + "vous venez d'obtenir une magnifique arme, votre argent est maintenant à ", player.player_data_dict["money"])
                     else:
                         retour= True
-                  
-                            
-                   
-
 
     elif choice in ["Boss","boss"]:
         print("Vous vous appretez à effectuer un combat de boss")
             
     elif choice in ["Monstre","monstre"]:
         print("Vous vous appretez à affronter un monstre")
+        player.start_monster_fight()
         
     elif choice in ["Quitter", "quitter"]:
         print("Vous allez quitter le jeu, votre jeu sera automatiquement sauvegarder")
