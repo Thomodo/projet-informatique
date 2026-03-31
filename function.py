@@ -12,9 +12,6 @@ def read_file(file_name):
         data = json.load(json_file)
         return data
 
-def base_player_data():
-    return read_file("base_player_data.json")
-
 def base_player_data_dict():
     return {'max_health' : 100, 'attack_damage' : 20, 'crit_chance' : 0, 'crit_multiplier' : 2, 'money' : 0, 'actual_health' : 100,
             'xp' : 0, 'weapon_level' : 0, 'armor_level' : 0, 'name' : None, 'level' : 1}
@@ -63,5 +60,3 @@ def prob_calc(prob):
     else:
         return False
 
-
-#write_data(base_player_data_dict(), "base_player_data.json")
