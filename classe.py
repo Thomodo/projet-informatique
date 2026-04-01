@@ -27,21 +27,48 @@ class Player:
             while self.player_data_dict['actual_health'] > 0 and monster.monster_data_dict['actual_health'] > 0:
                 if tour % 2 == 0: #tour joueur
                     print('Vous êtes face à ', monster.monster_data_dict['name'], ',il lui reste ',monster.monster_data_dict['actual_health'], 'points de vie.')
-                    ans = input("Voulez vous attaquer ce monstre ou fuir comme un lache (Vous allez perdre 10% de votre argent) ?\n"
-                                "'B' pour se battre, 'F' pour fuir comme un lache\n"
-                                "\n")
-                    while ans not in ["B", "F"]:
-                        ans = input("Vous devez répondre 'B' ou 'F'!\n")
+                    ans = input(
+                        "Voulez vous attaquer ce boss ou fuir comme un lache (Vous allez perdre 10% de votre argent) ou utiliser une potion ?\n"
+                        "'B' pour se battre, 'F' pour fuir comme un lache, 'P' pour utiliser une potion et ensuite vous battre\n"
+                        "\n")
+                    while ans not in ["B", "F", "P"]:
+                        ans = input("Vous devez répondre 'B' ou 'F' ou 'P'!\n")
 
-                    if ans == "B":  # Si la réponse est oui
+                    if ans == "B":
                         damage = (self.player_data_dict["attack_damage"] *
-                                        (1 + (self.player_data_dict["crit_multiplier"] - 1)*crit_work(self.player_data_dict["crit_chance"])))
+                                  (1 + (self.player_data_dict["crit_multiplier"] - 1) * crit_work(
+                                      self.player_data_dict["crit_chance"])))
                         monster.monster_data_dict['actual_health'] -= damage
                         print("Vous avez fait ", damage, " dégats au monstre")
-                    else:
+                    elif ans == 'F':
+                        loose = self.player_data_dict["money"] * 0.1
                         self.player_data_dict["money"] = self.player_data_dict["money"] * 0.9
                         self.player_data_dict['actual_health'] = 0
-                        print('Vous êtes un lache, vous avez perdu ', self.player_data_dict["money"], "$.")
+                        print('Vous êtes un lache, vous avez perdu ', loose, "$.")
+                    else:
+                        if self.player_data_dict['nb_health_potion'] != 0:
+                            print("Vous avez actuellement ", self.player_data_dict["nb_health_potion"],
+                                  " potions de vie de ", self.player_data_dict["health_potion_regen"],
+                                  " point de vie.")
+                            ans = input("Voulez vous utiliser une potion ?\n"
+                                        "'O' pour Oui, 'N' pour Non\n"
+                                        "\n")
+                            while ans not in ["O", "N"]:
+                                ans = input("Vous devez répondre 'O' ou 'N'!\n")
+                            if ans == "O":  # Si la réponse est oui
+                                self.player_data_dict['nb_health_potion'] -= 1
+                                self.player_data_dict['actual_health'] += self.player_data_dict[
+                                    'health_potion_regen']
+                                print("Vous avez maintenant ", self.player_data_dict['actual_health'],
+                                      " point de vie.")
+                        else:
+                            print("Vous n'avez pas de potion.")
+
+                        damage = (self.player_data_dict["attack_damage"] *
+                                  (1 + (self.player_data_dict["crit_multiplier"] - 1) * crit_work(
+                                      self.player_data_dict["crit_chance"])))
+                        monster.monster_data_dict['actual_health'] -= damage
+                        print("Vous avez fait ", damage, " dégats au monstre")
 
                 else: # tour monstre
                     damage = (monster.monster_data_dict["attack_damage"] *
@@ -65,23 +92,46 @@ class Player:
                     print('Vous êtes face à ', monster.monster_data_dict['name'], ',il lui reste ',
                           monster.monster_data_dict['actual_health'], 'points de vie.')
                     ans = input(
-                        "Voulez vous attaquer ce monstre ou fuir comme un lache (Vous allez perdre 10% de votre argent) ?\n"
-                        "'B' pour se battre, 'F' pour fuir comme un lache\n"
+                        "Voulez vous attaquer ce boss ou fuir comme un lache (Vous allez perdre 10% de votre argent) ou utiliser une potion ?\n"
+                        "'B' pour se battre, 'F' pour fuir comme un lache, 'P' pour utiliser une potion et ensuite vous battre\n"
                         "\n")
-                    while ans not in ["B", "F"]:
-                        ans = input("Vous devez répondre 'B' ou 'F'!\n")
+                    while ans not in ["B", "F", "P"]:
+                        ans = input("Vous devez répondre 'B' ou 'F' ou 'P'!\n")
 
-                    if ans == "B":  # Si la réponse est oui
+                    if ans == "B":
                         damage = (self.player_data_dict["attack_damage"] *
                                   (1 + (self.player_data_dict["crit_multiplier"] - 1) * crit_work(
                                       self.player_data_dict["crit_chance"])))
                         monster.monster_data_dict['actual_health'] -= damage
                         print("Vous avez fait ", damage, " dégats au monstre")
-                    else:
+                    elif ans == 'F':
                         loose = self.player_data_dict["money"] * 0.1
                         self.player_data_dict["money"] = self.player_data_dict["money"] * 0.9
                         self.player_data_dict['actual_health'] = 0
                         print('Vous êtes un lache, vous avez perdu ', loose, "$.")
+                    else:
+                        if self.player_data_dict['nb_health_potion'] != 0:
+                            print("Vous avez actuellement ", self.player_data_dict["nb_health_potion"],
+                                  " potions de vie de ", self.player_data_dict["health_potion_regen"],
+                                  " point de vie.")
+                            ans = input("Voulez vous utiliser une potion ?\n"
+                                        "'O' pour Oui, 'N' pour Non\n"
+                                        "\n")
+                            while ans not in ["O", "N"]:
+                                ans = input("Vous devez répondre 'O' ou 'N'!\n")
+                            if ans == "O":  # Si la réponse est oui
+                                self.player_data_dict['nb_health_potion'] -= 1
+                                self.player_data_dict['actual_health'] += self.player_data_dict[
+                                    'health_potion_regen']
+                                print("Vous avez maintenant ", self.player_data_dict['actual_health'],
+                                      " point de vie.")
+                        else:
+                            print("Vous n'avez pas de potion.")
+                        damage = (self.player_data_dict["attack_damage"] *
+                                  (1 + (self.player_data_dict["crit_multiplier"] - 1) * crit_work(
+                                      self.player_data_dict["crit_chance"])))
+                        monster.monster_data_dict['actual_health'] -= damage
+                        print("Vous avez fait ", damage, " dégats au monstre")
                 tour = tour + 1
         if self.player_data_dict['actual_health'] <= 0:
             print("Vous avez perdu !")
@@ -96,10 +146,13 @@ class Player:
     def update_level(self):
         old_level = self.player_data_dict['level']
         current_level = xp_to_level(self.player_data_dict['xp'])
-        self.player_data_dict['level'] = current_level
-        if old_level < current_level:
-            print('Félicitation, tu es passé niveau ', current_level, '.')
-        self.update_crit_chance()
+        if current_level != 6:
+            if old_level < current_level:
+                self.player_data_dict['level'] = current_level
+                print('Félicitation, tu es passé niveau ', current_level, '.')
+                self.update_crit_chance()
+        else:
+            print("Vous pourriez atteindre le niveau suivant mais vous devez déjà battre le boss avant.")
 
     def update_crit_chance(self):
         old_crit_chance = self.player_data_dict['crit_chance']
@@ -111,6 +164,137 @@ class Player:
         if old_crit_chance < crit_chance:
             print("Vous avez atteint une probabilité de ", crit_chance, " de faire un coup critique.")
 
+    def start_boss_fight(self):
+        if self.player_data_dict['level'] % 5 != 0:
+            print("Vous ne pouvez par combattre le boss vous devez être à un niveau multiple de 5, tu es trop nul pour le prochain boss.")
+        else:
+            boss = Boss(self.player_data_dict)
+            boss.load_boss_data()
+
+            tour = 0
+            commence = prob_calc(0.5)
+            if commence:
+                while self.player_data_dict['actual_health'] > 0 and boss.boss_data_dict['actual_health'] > 0:
+                    if tour % 2 == 0:  # tour joueur
+                        print('Vous êtes face à ', boss.boss_data_dict['name'], ',il lui reste ',
+                              boss.boss_data_dict['actual_health'], 'points de vie.')
+                        ans = input(
+                            "Voulez vous attaquer ce boss ou fuir comme un lache (Vous allez perdre 10% de votre argent) ou utiliser une potion ?\n"
+                            "'B' pour se battre, 'F' pour fuir comme un lache, 'P' pour utiliser une potion et ensuite vous battre\n"
+                            "\n")
+                        while ans not in ["B", "F", "P"]:
+                            ans = input("Vous devez répondre 'B' ou 'F' ou 'P'!\n")
+
+                        if ans == "B":
+                            damage = (self.player_data_dict["attack_damage"] *
+                                      (1 + (self.player_data_dict["crit_multiplier"] - 1) * crit_work(
+                                          self.player_data_dict["crit_chance"])))
+                            boss.boss_data_dict['actual_health'] -= damage
+                            print("Vous avez fait ", damage, " dégats au boss")
+                        elif ans == 'F':
+                            loose = self.player_data_dict["money"] * 0.1
+                            self.player_data_dict["money"] = self.player_data_dict["money"] * 0.9
+                            self.player_data_dict['actual_health'] = 0
+                            print('Vous êtes un lache, vous avez perdu ', loose, "$.")
+                        else:
+                            if self.player_data_dict['nb_health_potion'] != 0:
+                                print("Vous avez actuellement ", self.player_data_dict["nb_health_potion"], " potions de vie de ", self.player_data_dict["health_potion_regen"], " point de vie.")
+                                ans = input("Voulez vous utiliser une potion ?\n"
+                                            "'O' pour Oui, 'N' pour Non\n"
+                                            "\n")
+                                while ans not in ["O", "N"]:
+                                    ans = input("Vous devez répondre 'O' ou 'N'!\n")
+                                if ans == "O":  # Si la réponse est oui
+                                    self.player_data_dict['nb_health_potion'] -= 1
+                                    self.player_data_dict['actual_health'] += self.player_data_dict['health_potion_regen']
+                                    print("Vous avez maintenant ", self.player_data_dict['actual_health'], " point de vie.")
+                            else:
+                                print("Vous n'avez pas de potion.")
+                            damage = (self.player_data_dict["attack_damage"] *
+                                      (1 + (self.player_data_dict["crit_multiplier"] - 1) * crit_work(
+                                          self.player_data_dict["crit_chance"])))
+                            boss.boss_data_dict['actual_health'] -= damage
+                            print("Vous avez fait ", damage, " dégats au boss")
+
+                    else:  # tour boss
+                        damage = (boss.boss_data_dict["attack_damage"] *
+                                  (1 + (boss.boss_data_dict["crit_multiplier"] - 1) * crit_work(
+                                      boss.boss_data_dict["crit_chance"])))
+                        self.player_data_dict['actual_health'] -= damage
+                        print(boss.boss_data_dict['name'], ' vous a fait ', damage
+                              , ' point de dégats, il vous reste ', self.player_data_dict['actual_health'],
+                              ' points de vie.')
+                    tour = tour + 1
+            else:
+                while self.player_data_dict['actual_health'] > 0 and boss.boss_data_dict['actual_health'] > 0:
+                    if tour % 2 == 0:  # tour boss
+                        damage = (boss.boss_data_dict["attack_damage"] *
+                                  (1 + (boss.boss_data_dict["crit_multiplier"] - 1) * crit_work(
+                                      boss.boss_data_dict["crit_chance"])))
+                        self.player_data_dict['actual_health'] -= damage
+                        print(boss.boss_data_dict['name'], ' vous a fait ', damage
+                              , ' point de dégats, il vous reste ', self.player_data_dict['actual_health'],
+                              ' points de vie.')
+
+                    else:  # tour joueur
+                        print('Vous êtes face à ', boss.boss_data_dict['name'], ',il lui reste ',
+                              boss.boss_data_dict['actual_health'], 'points de vie.')
+                        ans = input(
+                            "Voulez vous attaquer ce boss ou fuir comme un lache (Vous allez perdre 10% de votre argent) ou utiliser une potion ?\n"
+                            "'B' pour se battre, 'F' pour fuir comme un lache, 'P' pour utiliser une potion et ensuite vous battre\n"
+                            "\n")
+                        while ans not in ["B", "F", "P"]:
+                            ans = input("Vous devez répondre 'B' ou 'F' ou 'P'!\n")
+
+                        if ans == "B":
+                            damage = (self.player_data_dict["attack_damage"] *
+                                      (1 + (self.player_data_dict["crit_multiplier"] - 1) * crit_work(
+                                          self.player_data_dict["crit_chance"])))
+                            boss.boss_data_dict['actual_health'] -= damage
+                            print("Vous avez fait ", damage, " dégats au boss")
+                        elif ans == 'F':
+                            loose = self.player_data_dict["money"] * 0.1
+                            self.player_data_dict["money"] = self.player_data_dict["money"] * 0.9
+                            self.player_data_dict['actual_health'] = 0
+                            print('Vous êtes un lache, vous avez perdu ', loose, "$.")
+                        else:
+                            if self.player_data_dict['nb_health_potion'] != 0:
+                                print("Vous avez actuellement ", self.player_data_dict["nb_health_potion"],
+                                      " potions de vie de ", self.player_data_dict["health_potion_regen"],
+                                      " point de vie.")
+                                ans = input("Voulez vous utiliser une potion ?\n"
+                                            "'O' pour Oui, 'N' pour Non\n"
+                                            "\n")
+                                while ans not in ["O", "N"]:
+                                    ans = input("Vous devez répondre 'O' ou 'N'!\n")
+                                if ans == "O":  # Si la réponse est oui
+                                    self.player_data_dict['nb_health_potion'] -= 1
+                                    self.player_data_dict['actual_health'] += self.player_data_dict[
+                                        'health_potion_regen']
+                                    print("Vous avez maintenant ", self.player_data_dict['actual_health'],
+                                          " point de vie.")
+                            else:
+                                print("Vous n'avez pas de potion.")
+                            damage = (self.player_data_dict["attack_damage"] *
+                                      (1 + (self.player_data_dict["crit_multiplier"] - 1) * crit_work(
+                                          self.player_data_dict["crit_chance"])))
+                            boss.boss_data_dict['actual_health'] -= damage
+                            print("Vous avez fait ", damage, " dégats au boss")
+                    tour = tour + 1
+            if self.player_data_dict['actual_health'] <= 0:
+                print("Vous avez perdu !")
+            else:
+                self.player_data_dict['money'] += boss.boss_data_dict['money_reward']
+                self.player_data_dict['xp'] += boss.boss_data_dict['xp_reward']
+                print("Vous avez gagné !\n"
+                      "En récompense vous recevez ", boss.boss_data_dict['money_reward'], ' $ et ',
+                      boss.boss_data_dict['xp_reward'], ' xp.')
+                self.player_data_dict['level'] += 1
+                print('Félicitation, tu es passé niveau ', self.player_data_dict['level'], '.')
+                self.player_data_dict["xp"] = level_to_xp(self.player_data_dict["level"])
+                self.update_crit_chance()
+            self.player_data_dict['actual_health'] = self.player_data_dict['max_health']
+
 class Monster:
     def __init__(self, player_data_dict):
         self.player_data_dict = player_data_dict
@@ -118,3 +302,9 @@ class Monster:
     def load_monster_data(self, player):
         self.monster_data_dict = monster_choose(player.player_data_dict["level"])
 
+class Boss:
+    def __init__(self, player_data_dict):
+        self.player_data_dict = player_data_dict
+
+    def load_boss_data(self):
+        self.boss_data_dict = boss_choose(self.player_data_dict["level"])

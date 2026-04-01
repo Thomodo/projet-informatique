@@ -137,6 +137,7 @@ while quit != True :
 
     elif choice in ["Boss","boss"]:
         print("Vous vous appretez à effectuer un combat de boss")
+        player.start_boss_fight()
             
     elif choice in ["Monstre","monstre"]:
         print("Vous vous appretez à affronter un monstre")
