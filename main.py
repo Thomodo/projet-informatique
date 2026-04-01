@@ -29,35 +29,37 @@ skip_exp= True
 while quit != True : # Tant que le joueur ne souhaite pas quitter la partie le code continue
     if skip_exp != True:
         asw = input(" Bienvenue dans Pyplot the Game !!! Souhaitez - vous connaître le fonctionnement du jeu ? Faite 'O' pour Oui et 'N' pour non  ")
-        while choice not in [ "O","o", "N", "n"]:
+        while asw not in [ "O","o", "N", "n"]:
             asw = input("Vous devez répondre soit par 'O' soit par 'N !\n")
-            if asw in ["O","o"]:
-                asw1=input( " Le but de Pyplot the Game est un de combattre le boss final ! \n Pour connaître le fonctionnement des combats, entrez 'Combat' \n " 
-                "Pour savoir comment obtenir de l'argent, entrez : 'argent' \n "
-                " Pour savoir comment obtenir de l'expérience, entrez :'xp'\n"
-                "Pour connaitre le fonctionnement de la boutique, entrez: 'boutique'"
-                "Pour quitter, entrez 'quitter")
-                
-                if asw1 not in ["Argent","argent","Combat","combat","Xp","xp","Boutique","boutique","Quitter","quitter"]:
-                    aws1=input( "Veuillez ecrire 'Combat', 'Argent', ' Xp',' Boutique' ou 'Quitter' " )
+        if asw in ["O","o"]:
+            asw1=input( " Le but de Pyplot the Game est un de combattre le boss final ! \n Pour connaître le fonctionnement des combats, entrez 'Combat' \n " 
+            "Pour savoir comment obtenir de l'argent, entrez : 'argent' \n "
+            "Pour savoir comment obtenir de l'expérience, entrez :'xp'\n"
+            "Pour connaitre le fonctionnement de la boutique, entrez: 'boutique'"
+            "Pour quitter, entrez 'quitter")
 
-                    if asw1 in ['Combat','combat']:
-                        print(" Il existe deux types de combat possible qui se base sur le fonctionnement du tour par tour. \n"
-                              " Vous affronterez soit un monstre qui aura une difficulté proportionnelle à votre niveau soit un boss qui aura une diffulculté plus importante tout les 5 niveaux")
-                        
-                    if asw1 in ['Argent','argent']:
-                        print("Pour avoir de l'argent, il suffit d'affronter un monstre mais attention si au cours du combat vous décidez de fuir " \
-                        "alors vous perderez 10% de votre argent actuelle. Réflichissez donc bien avant d'en entamer un.") 
-        
-                    if asw1 in ["Xp",'xp']:
-                        print( " Pour gagner de l'expérience, il suffit d'effectuer des combats de monstres s'il vous reussissez à les vaincre alors vous pourrez gagner de l'expérience")
-                    
-                    if asw1 in [ "Boutique","boutique"]:
-                        print("La boutique sert à acheter différents items qui vous aideront dans les combats. Les items ont une efficacité proportionnelle à votre niveau actuelle \n"
-                              " Vous pourrez acheter des potions qui vous permettront d'augmenter votre vie\n"
-                              , " des armures pour vous proteger et des armes pour infliger d'avantage de dégât lors des combats.\n")
-                    if asw1 in ["Quitter", "quitter"]:
-                        skip_exp =  True
+            while asw1 not in ["Argent","argent","Combat","combat","Xp","xp","Boutique","boutique","Quitter","quitter"]:
+                aws1=input( "Veuillez ecrire 'Combat', 'Argent', ' Xp',' Boutique' ou 'Quitter' " )
+
+            if asw1 in ['Combat','combat']:
+                print(" Il existe deux types de combat possible qui se base sur le fonctionnement du tour par tour. \n"
+                      " Vous affronterez soit un monstre qui aura une difficulté proportionnelle à votre niveau soit un boss qui aura une diffulculté plus importante tout les 5 niveaux")
+
+            elif asw1 in ['Argent','argent']:
+                print("Pour avoir de l'argent, il suffit d'affronter un monstre mais attention si au cours du combat vous décidez de fuir " \
+                "alors vous perderez 10% de votre argent actuelle. Réflichissez donc bien avant d'en entamer un.")
+
+            elif asw1 in ["Xp",'xp']:
+                print( " Pour gagner de l'expérience, il suffit d'effectuer des combats de monstres s'il vous reussissez à les vaincre alors vous pourrez gagner de l'expérience")
+
+            elif asw1 in [ "Boutique","boutique"]:
+                print("La boutique sert à acheter différents items qui vous aideront dans les combats. Les items ont une efficacité proportionnelle à votre niveau actuelle \n"
+                      " Vous pourrez acheter des potions qui vous permettront d'augmenter votre vie\n"
+                      , " des armures pour vous proteger et des armes pour infliger d'avantage de dégât lors des combats.\n")
+            elif asw1 in ["Quitter", "quitter"]:
+                skip_exp =  True
+        else:
+            skip_exp = True
                         
     choice = input ("Que souhaitez vous faire ? \n" 
                 "Pour accéder à votre boutique, entrez 'boutique'\n"
@@ -68,11 +70,11 @@ while quit != True : # Tant que le joueur ne souhaite pas quitter la partie le c
     
     while choice not in [ "Boutique","boutique", "Boss", "boss","Monstre","monstre",' Quitter', 'quitter']:
         choice = input("Vous devez répondre soit par 'boutique' soit par  'boss'soit par  'monstre' ou par 'quitter'!\n")
-        
+
     if choice in ["Boutique","boutique"]:
-        print("Bienvenue dans la boutique " + str(player.player_data_dict["name"]) + " Vous avez nbr  Potion vous possédez " + str(player.player_data_dict["money"]) +  " argent actuellement et vous êtes niveau " + str(player.player_data_dict["level"]) + "\n ")
+        print("Bienvenue dans la boutique " + str(player.player_data_dict["name"]) + " ,vous avez " + str(player.player_data_dict["nb_health_potion"]) + " potions, vous possédez " + str(player.player_data_dict["money"]) +  " argent actuellement et vous êtes niveau " + str(player.player_data_dict["level"]) + ".\n ")
         retour= False 
-        while retour!= True:# Tant que le joueur ne souhaite pas quitter la boutique, le choix entre acheter des objets et quitter la boutique continue 
+        while retour != True:# Tant que le joueur ne souhaite pas quitter la boutique, le choix entre acheter des objets et quitter la boutique continue
             article= input("Pour acheter des potions, entrez 'potion' \n pour acheter des améliorations pour votre arme, entrez 'arme' \n pour acheter des améliorations pour votre armure, 'armure' \n et pour quitter la boutique, entrez ' Quitter' ")
             while article not in ["Armure","armure", "Potion", "potion","arme","arme", " Quitter", "quitter"]:
                 article = input("Vous devez répondre soit par 'armure' soit par 'potion' soit par 'arme' ou ' quitter '\n")
@@ -100,12 +102,13 @@ while quit != True : # Tant que le joueur ne souhaite pas quitter la partie le c
                         else:
                             player.player_data_dict["money"]-=armory[indice_mini]["Price"]
                             player.player_data_dict["armor_level"] += 1
-                            print("Félicitation " + player.player_data_dict["name"] + "vous venez d'obtenir une magnifique armure, votre argent maintenant à " +  player.player_data_dict["money"])
+                            print("Félicitation " + str(player.player_data_dict["name"]) + "vous venez d'obtenir une magnifique armure, votre argent maintenant à " + str(player.player_data_dict["money"]))
                     else:
                         retour = True
                 else:
                     print("Vous ne pouvez pas acheter d'armure pour l'instant car vous posséder déjà celle disponible à votre niveau, continuer à combattre des monstres pour accéder à l'armure suivante")
-                     
+
+
             if article in ["Potion","potion"]:
                 potion=[{"life point":0,"required level":0, "Price":0},{"life point":5,"required level":10, "Price":5},
                         {"life point":10,"required level":20, "Price":10},{"life point":15,"required level":30, "Price":15},
@@ -120,7 +123,7 @@ while quit != True : # Tant que le joueur ne souhaite pas quitter la partie le c
                         mini= potion[i]["required level"]
                         indice_mini=i
                 if indice_mini != player.player_data_dict["level"]:
-                    decision= input(print("La potion disponible pour votre niveau actuelle permet d'ajouté "+ potion[indice_mini]["required level"] + "point de vie, son prix est de " + potion[indice_mini]["Price"] + "\n souhaitez vous l'acheté ?, 'O' pour Oui, 'N' pour Non\n"))
+                    decision= input(print("La potion disponible pour votre niveau actuelle permet d'ajouté "+ str(potion[indice_mini]["required level"]) + "point de vie, son prix est de " + str(potion[indice_mini]["Price"]) + "\n souhaitez vous l'acheté ?, 'O' pour Oui, 'N' pour Non\n"))
                     while decision not in ["O","o","N","n"]:
                         decision = input("Vous devez répondre 'O' ou 'N'!\n")
                     if decision in ["O","o"]:
@@ -128,13 +131,13 @@ while quit != True : # Tant que le joueur ne souhaite pas quitter la partie le c
                             print ("Vous n'avez pas assez d'argent pour acheter cet article, revenez quand vous aurez assez")
                         else:
                             player.player_data_dict["money"]-=potion[indice_mini]["Price"]
-                            player.player_data_dict["health_potion"] += 1
-                            print("Félicitation " + player.player_data_dict["name"] + "vous venez d'obtenir une potion qui vous permettra de vous rajouter de la vie supplémentaire, votre argent est maintenant à " +  player.player_data_dict["money"])
+                            player.player_data_dict["nb_health_potion"] += 1
+                            print("Félicitation " + str(player.player_data_dict["name"]) + "vous venez d'obtenir une potion qui vous permettra de vous rajouter de la vie supplémentaire, votre argent est maintenant à " + str(player.player_data_dict["money"]))
                     else:
                         retour = True
                 else:
                     print("Vous ne pouvez pas acheter de potion pour l'instant, continuer à combattre des monstres")
-        
+
 
             if article in ["Arme","arme"]:
                 weapon=[{"damage attack":0,"required level":0, "Price":0},{"damage attack":5,"required level":10, "Price":5},
@@ -157,9 +160,9 @@ while quit != True : # Tant que le joueur ne souhaite pas quitter la partie le c
                         if player.player_data_dict["money"] < weapon[indice_mini]["Price"]:
                             print ("Vous n'avez pas assez d'argent pour acheter cet article, revenez quand vous aurez assez")
                         else:
-                            player.player_data_dict["money"]-=weapon[indice_mini]["Price"]
-                            player.player_data_dict["armor_level"] += 1
-                            print("Félicitation " + player.player_data_dict["name"] + "vous venez d'obtenir une superbe arme, votre argent est maintenant à "+ player.player_data_dict["money"])
+                            player.player_data_dict["money"] -= weapon[indice_mini]["Price"]
+                            player.player_data_dict["weapon_level"] += 1
+                            print("Félicitation " + player.player_data_dict["name"] + "vous venez d'obtenir une superbe arme, votre argent est maintenant à " + str(player.player_data_dict["money"]))
                     else:
                         retour = True
                 else:
@@ -180,4 +183,3 @@ while quit != True : # Tant que le joueur ne souhaite pas quitter la partie le c
         print("Vous allez quitter le jeu, votre jeu sera automatiquement sauvegardé")
         player.save_player_data()
         quit = True
-

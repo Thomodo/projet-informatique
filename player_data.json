@@ -1,1 +1,1 @@
-{"max_health": 100, "attack_damage": 20, "crit_chance": 0.04, "crit_multiplier": 2, "money": 60, "actual_health": 100, "xp": 90, "weapon_level": 0, "armor_level": 0, "name": "Julien", "level": 5, "nb_health_potion": 2, "health_potion_regen": 30, "health_potion_level": 1}
+{"max_health": 100, "attack_damage": 20, "crit_chance": 0.12, "crit_multiplier": 2, "money": 180, "actual_health": 100, "xp": 1090, "weapon_level": 0, "armor_level": 0, "name": "Julien", "level": 6, "nb_health_potion": 0, "health_potion_regen": 30, "health_potion_level": 1}
