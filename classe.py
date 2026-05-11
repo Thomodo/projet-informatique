@@ -146,13 +146,13 @@ class Player:
     def update_level(self):
         old_level = self.player_data_dict['level']
         current_level = xp_to_level(self.player_data_dict['xp'])
-        if current_level != 6:
-            if old_level < current_level:
+        if old_level < current_level:
+            if current_level in [6,11,16]:
                 self.player_data_dict['level'] = current_level
                 print('Félicitation, tu es passé niveau ', current_level, '.')
                 self.update_crit_chance()
-        else:
-            print("Vous pourriez atteindre le niveau suivant mais vous devez déjà battre le boss avant.")
+            else:
+                print("Vous pourriez atteindre le niveau suivant mais vous devez déjà battre le boss avant.")
 
     def update_crit_chance(self):
         old_crit_chance = self.player_data_dict['crit_chance']
@@ -293,6 +293,12 @@ class Player:
                 print('Félicitation, tu es passé niveau ', self.player_data_dict['level'], '.')
                 self.player_data_dict["xp"] = level_to_xp(self.player_data_dict["level"])
                 self.update_crit_chance()
+                if self.player_data_dict['level'] == 6:
+                    self.player_data_dict["health_potion_regen"] = 75
+                elif self.player_data_dict['level'] == 11:
+                    self.player_data_dict["health_potion_regen"] = 100
+                elif self.player_data_dict['level'] == 16:
+                    self.player_data_dict["health_potion_regen"] = 150
             self.player_data_dict['actual_health'] = self.player_data_dict['max_health']
 
 class Monster:
