@@ -147,7 +147,7 @@ class Player:
         old_level = self.player_data_dict['level']
         current_level = xp_to_level(self.player_data_dict['xp'])
         if old_level < current_level:
-            if current_level in [6,11,16]:
+            if current_level not in [6,11,16]:
                 self.player_data_dict['level'] = current_level
                 print('Félicitation, tu es passé niveau ', current_level, '.')
                 self.update_crit_chance()

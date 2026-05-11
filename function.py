@@ -66,7 +66,7 @@ def xp_to_level(xp):
         return len(level_tab) - 1
 
 def level_to_xp(level):
-    level_tab = [0,0,10,50,100,200,300,450,600,750,1000,1250,1600,2000,2500,3500]
+    level_tab = [0,0,10,50,100,200,300,450,600,750,1000,1250,1600,2000,2500,3500,5000]
     return level_tab[level]
 
 def monster_choose(level):
