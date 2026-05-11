@@ -96,10 +96,10 @@ def prob_calc(prob):
         return False
 
 def boss_choose(level):
-    boss_data_dict_level = [{'max_health': 100, 'attack_damage': 10, 'crit_chance': 0, 'crit_multiplier': 2, 'money_reward': 10,
-                  'actual_health': 100,'xp_reward': 15, 'name': "Michel_killeur"},
-                            {'max_health': 100, 'attack_damage': 10, 'crit_chance': 0, 'crit_multiplier': 2, 'money_reward': 10,
-                  'actual_health': 100,'xp_reward': 15, 'name': "Johanne_killeur"},
-                            {'max_health': 100, 'attack_damage': 10, 'crit_chance': 0, 'crit_multiplier': 2, 'money_reward': 10,
-                  'actual_health': 100,'xp_reward': 15, 'name': "Patrick_killeur"}]
+    boss_data_dict_level = [{'max_health': 100, 'attack_damage': 20, 'crit_chance': 0, 'crit_multiplier': 2, 'money_reward': 100,
+                  'actual_health': 100, 'xp_reward': 35, 'name': "Jacques_Chirac_le_Boss"},
+                            {'max_health': 150, 'attack_damage': 30, 'crit_chance': 0, 'crit_multiplier': 2, 'money_reward': 1000,
+                  'actual_health': 150, 'xp_reward': 70, 'name': "Thomas_le_grand_le_Boss"},
+                            {'max_health': 250, 'attack_damage': 60, 'crit_chance': 0, 'crit_multiplier': 2, 'money_reward': 10000,
+                  'actual_health': 250, 'xp_reward': 100, 'name': "Le_Dézingueur_le_Boss"}]
     return boss_data_dict_level[int((level/5)-1)]
