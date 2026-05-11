@@ -89,7 +89,8 @@ while quit != True : # Tant que le joueur ne souhaite pas quitter la partie le c
                         mini= armory[i]["required level"]
                         indice_mini=i
                 if indice_mini != player.player_data_dict["armor_level"]: # Si l'armure disponible est differente de celle que le joueur possède alors il peut l'acheter s'il le souhaite.
-                    decision= input(print("L'armure disponible pour votre niveau actuelle permet d'ajouté",armory[indice_mini]["health_bonus"],"point de vie, son prix est de",armory[indice_mini]["Price"],"\n souhaitez vous l'acheté ?, 'O' pour Oui, 'N' pour Non\n"))
+                    decision= input(print("L'armure disponible pour votre niveau actuelle permet d'ajouté",armory[indice_mini]["health_bonus"],
+                                          "point de vie, son prix est de",armory[indice_mini]["Price"],"\n souhaitez vous l'acheté ?, 'O' pour Oui, 'N' pour Non\n"))
                     while decision not in ["O","o","N","n"]:
                         decision = input("Vous devez répondre 'O' ou 'N'!\n")
                     if decision in ["O","o"]:
@@ -98,7 +99,8 @@ while quit != True : # Tant que le joueur ne souhaite pas quitter la partie le c
                         else:
                             player.player_data_dict["money"]-=armory[indice_mini]["Price"]
                             player.player_data_dict["armor_level"] = indice_mini
-                            print("Félicitation " + str(player.player_data_dict["name"]) + "vous venez d'obtenir une magnifique armure, votre argent maintenant à " + str(player.player_data_dict["money"]))
+                            print("Félicitation " + str(player.player_data_dict["name"]) + "vous venez d'obtenir une magnifique armure, votre argent maintenant à "
+                                  + str(player.player_data_dict["money"]))
                             player.player_data_dict["max_health"] = 100 + armory[indice_mini]["health_bonus"]
                     else:
                         retour = True
@@ -115,7 +117,7 @@ while quit != True : # Tant que le joueur ne souhaite pas quitter la partie le c
                     if potion[i]["required level"] <= player.player_data_dict["level"]:
                         mini= potion[i]["required level"]
                         indice_mini=i
-                if indice_mini != player.player_data_dict["level"]:
+                if player.player_data_dict["level"] < 5:
                     decision= input(print("La potion disponible pour votre niveau actuelle permet d'ajouté "+ str(potion[indice_mini]["life point"]) + " point de vie, son prix est de " + str(potion[indice_mini]["Price"]) + "\n souhaitez vous l'acheté ?, 'O' pour Oui, 'N' pour Non\n"))
                     while decision not in ["O","o","N","n"]:
                         decision = input("Vous devez répondre 'O' ou 'N'!\n")
@@ -125,11 +127,13 @@ while quit != True : # Tant que le joueur ne souhaite pas quitter la partie le c
                         else:
                             player.player_data_dict["money"]-=potion[indice_mini]["Price"]
                             player.player_data_dict["nb_health_potion"] += 1
-                            print("Félicitation " + str(player.player_data_dict["name"]) + "vous venez d'obtenir une potion qui vous permettra de vous rajouter de la vie supplémentaire, votre argent est maintenant à " + str(player.player_data_dict["money"]))
+                            print("Félicitation " + str(player.player_data_dict["name"]) +
+                                  "vous venez d'obtenir une potion qui vous permettra de vous rajouter de la vie supplémentaire, votre argent est maintenant à "
+                                  + str(player.player_data_dict["money"]))
                     else:
                         retour = True
                 else:
-                    print("Vous ne pouvez pas acheter de potion pour l'instant, continuer à combattre des monstres")
+                    print("Vous ne pouvez pas acheter de potion pour l'instant, continuer à combattre des monstres, vous devez atteindre le niveau 5")
 
 
             if article in ["Arme","arme"]:
@@ -151,7 +155,8 @@ while quit != True : # Tant que le joueur ne souhaite pas quitter la partie le c
                         else:
                             player.player_data_dict["money"] -= weapon[indice_mini]["Price"]
                             player.player_data_dict["weapon_level"] = indice_mini
-                            print("Félicitation " + player.player_data_dict["name"] + "vous venez d'obtenir une superbe arme, votre argent est maintenant à " + str(player.player_data_dict["money"]))
+                            print("Félicitation " + player.player_data_dict["name"] + "vous venez d'obtenir une superbe arme, votre argent est maintenant à "
+                                  + str(player.player_data_dict["money"]))
                             player.player_data_dict["attack_damage"] = 20 + weapon[indice_mini]["bonus_damage"]
                     else:
                         retour = True

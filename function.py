@@ -13,8 +13,10 @@ def read_file(file_name):
         return data
 
 def base_player_data_dict():
-    return {'max_health' : 100, 'attack_damage' : 20, 'crit_chance' : 0, 'crit_multiplier' : 2, 'money' : 0, 'actual_health' : 100,
-            'xp' : 0, 'weapon_level' : 0, 'armor_level' : 0, 'name' : None, 'level' : 1, 'nb_health_potion' : 0, "health_potion_regen" : 0}
+    return {'max_health' : 100, 'attack_damage' : 20, 'crit_chance' : 0,
+            'crit_multiplier' : 2, 'money' : 0, 'actual_health' : 100,
+            'xp' : 0, 'weapon_level' : 0, 'armor_level' : 0, 'name' : None,
+            'level' : 1, 'nb_health_potion' : 0, "health_potion_regen" : 0}
 
 def read_player_data():
     return read_file("player_data.json")
