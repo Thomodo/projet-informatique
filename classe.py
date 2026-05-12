@@ -72,7 +72,8 @@ class Player:
 
                 else: # tour monstre
                     damage = (monster.monster_data_dict["attack_damage"] *
-                                        (1 + (monster.monster_data_dict["crit_multiplier"] - 1)*crit_work(monster.monster_data_dict["crit_chance"])))
+                                        (1 + (monster.monster_data_dict["crit_multiplier"] - 1)
+                                        * crit_work(monster.monster_data_dict["crit_chance"])))
                     self.player_data_dict['actual_health'] -= damage
                     print(monster.monster_data_dict['name'], ' vous a fait ', damage
                           , ' point de dégats, il vous reste ', self.player_data_dict['actual_health'], ' points de vie.')
@@ -139,7 +140,8 @@ class Player:
             self.player_data_dict['money'] += monster.monster_data_dict['money_reward']
             self.player_data_dict['xp'] += monster.monster_data_dict['xp_reward']
             print("Vous avez gagné !\n"
-                  "En récompense vous recevez ", monster.monster_data_dict['money_reward'], ' $ et ', monster.monster_data_dict['xp_reward'], ' xp.')
+                  "En récompense vous recevez ", monster.monster_data_dict['money_reward'],
+                  ' $ et ', monster.monster_data_dict['xp_reward'], ' xp.')
             self.update_level()
         self.player_data_dict['actual_health'] = self.player_data_dict['max_health']
 

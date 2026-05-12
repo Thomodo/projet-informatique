@@ -117,7 +117,7 @@ while quit != True : # Tant que le joueur ne souhaite pas quitter la partie le c
                     if potion[i]["required level"] <= player.player_data_dict["level"]:
                         mini= potion[i]["required level"]
                         indice_mini=i
-                if player.player_data_dict["level"] < 5:
+                if player.player_data_dict["level"] > 5:
                     decision= input(print("La potion disponible pour votre niveau actuelle permet d'ajouté "+ str(potion[indice_mini]["life point"]) + " point de vie, son prix est de " + str(potion[indice_mini]["Price"]) + "\n souhaitez vous l'acheté ?, 'O' pour Oui, 'N' pour Non\n"))
                     while decision not in ["O","o","N","n"]:
                         decision = input("Vous devez répondre 'O' ou 'N'!\n")
